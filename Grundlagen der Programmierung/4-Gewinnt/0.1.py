@@ -1,4 +1,4 @@
-# Funktion zum Erstellen des Spielfelds
+# Funktion zum Erstellen des Spielfelds zzz
 def create_board(rows, cols):
     board = [[' ' for _ in range(cols)] for _ in range(rows)]
     return board
@@ -54,7 +54,7 @@ def connect_four():
 
     while turns < rows * cols:
         display_board(board)
-        col = int(input(f'Spieler {player}, wähle eine Spalte (0-(cols-1): '))
+        col = int(input(f'Spieler {player}, wähle eine Spalte (0-6): '))
         if 0 <= col < cols and is_valid_move(board, col):
             make_move(board, col, player)
             if is_game_over(board, player):
