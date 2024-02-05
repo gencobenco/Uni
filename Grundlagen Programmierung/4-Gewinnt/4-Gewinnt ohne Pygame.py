@@ -19,7 +19,7 @@ def make_move(board, col, player):
         if row[col] == ' ':
             row[col] = player
             return
-        
+
 # Funktion zum Überprüfen, ob das Spiel vorbei ist
 def is_game_over(board, player):
     for row in board:
