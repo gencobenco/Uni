@@ -178,13 +178,6 @@ def draw_options_page():
     label_rect = color2_label.get_rect(center=color2_button_rect.center)
     screen.blit(color2_label, label_rect.topleft)
 
-    # Speed Button
-    speed_button_rect = pygame.Rect(10, height - 60, 150, 50)
-    pygame.draw.rect(screen, GREY, speed_button_rect, border_radius=10)
-    speed_label = myfont.render("Change Speed", True, BLACK)
-    label_rect = speed_label.get_rect(center=speed_button_rect.center)
-    screen.blit(speed_label, label_rect.topleft)
-
     pygame.display.update()
 
     
